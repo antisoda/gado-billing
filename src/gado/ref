@@ -1,0 +1,11 @@
+	tabel_user.addMouseListener(new MouseAdapter(){
+		public void mouseClicked(MouseEvent e){
+			if(SwingUtilities.isLeftMouseButton(e)){
+				//aksi
+			}else if(SwingUtilities.isRightMouseButton(e)){
+				Point p = e.getPoint();
+				int baris = tabel_user.rowAtPoint(p);
+			}
+		}
+	});
+	System.out.print("oke");
